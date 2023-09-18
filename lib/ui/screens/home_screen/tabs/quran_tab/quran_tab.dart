@@ -5,6 +5,7 @@ import 'package:islami_c9_mon/ui/utils/app_assets.dart';
 import 'package:islami_c9_mon/ui/utils/app_colors.dart';
 import 'package:islami_c9_mon/ui/utils/app_theme.dart';
 import 'package:islami_c9_mon/ui/utils/constants.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class QuranTab extends StatelessWidget {
   const QuranTab({super.key});
@@ -22,8 +23,8 @@ class QuranTab extends StatelessWidget {
            color: AppColors.primiary,
             thickness: 4,
           ),
-          const Text("Sura name",textAlign: TextAlign.center, style: AppTheme.suraNameTextStyle,),
-
+          Text(AppLocalizations.of(context)!.suraName
+            ,textAlign: TextAlign.center, style: Theme.of(context).textTheme.bodySmall,),
           const Divider(
             color: AppColors.primiary,
             thickness: 4,
